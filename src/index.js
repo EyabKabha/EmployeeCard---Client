@@ -33,9 +33,7 @@ export default class App extends React.Component {
 
   onClickMoreIncome = (event) => {
     var statusIncome = event.target.value;
-    console.log('in yes')
     if (statusIncome === 'yesIncomeMore') {
-      console.log('in yes')
       this.setState({ incomeStatus: true })
     } else {
       this.setState({ incomeStatus: false })
@@ -492,14 +490,14 @@ export default class App extends React.Component {
         <div className="text-right mt-3 mb-3" style={{ 'font-size': '19px' }}>
           <span className="badge badge-secondary">ז. שינויים במהלך השנה
             </span>
-     
-            <div className="alert alert-primary mt-3">
-              חלק זה, המופיע בטופס 101 המודפס, אינו רלוונטי מכיוון שמדובר בטופס ממוחשב.
 
-              על כל שינוי שיחול בפרטים שמילאת בטופס, יש להודיע למעביד עד שבוע ימים מתאריך השינוי, ע"י מילוי טופס חדש במערכת זו או בכל אמצעי שהמעביד מאפשר.
+          <div className="alert alert-primary mt-3">
+            חלק זה, המופיע בטופס 101 המודפס, אינו רלוונטי מכיוון שמדובר בטופס ממוחשב.
+
+            על כל שינוי שיחול בפרטים שמילאת בטופס, יש להודיע למעביד עד שבוע ימים מתאריך השינוי, ע"י מילוי טופס חדש במערכת זו או בכל אמצעי שהמעביד מאפשר.
                 </div>
-          </div>
-       
+        </div>
+
 
       </div>
     )
